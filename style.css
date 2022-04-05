@@ -1,0 +1,80 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: aliceblue;
+}
+
+#game-area {
+    background-image: url('./img/bg.jpg');
+    width: 800px;
+    height: 560px;
+}
+
+#hero {
+    position: relative;
+    height: 60px;
+    width: 80px;
+    left: 20px;
+    top: 250px;
+}
+
+.laser {
+    position: relative;
+    width: 40px;
+    height: 10px;
+}
+
+.alien {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.alien-transition {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.dead-alien {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    opacity: 0;
+}
+
+.game-instructions {
+    position: relative;
+    color: white;
+    top: 0px;
+    left: 7rem;
+    border: 1px solid white;
+    padding: 5px;
+    width: 70%;
+}
+
+.start-btn {
+    position: relative;
+    color: white;
+    top: 9rem;
+    cursor: pointer;
+}
+
+button {
+    margin: 0 auto;
+    margin-top: 0;
+    width: 120px;
+    background: #0ed30e;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+}
